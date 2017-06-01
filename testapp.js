@@ -1,3 +1,5 @@
+//copy of app.js for testing and maintenance
+//one owner, restricted usage, silenced greeting
 const commando = require('discord.js-commando');
 const bot = new commando.Client({
   owner: ['197891949913571329'],
