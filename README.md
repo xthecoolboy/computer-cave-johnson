@@ -25,4 +25,9 @@ Computer Cave Johnson is a Discord bot written in JavaScript using the Discord.j
     <td>cptbubblez#0730</td>
     <td>Co-Founder and Co-Writer</td>
   </tr>
+  <tr>
+    <td>Cave</td>
+    <td>Cave Johnson#8291</td>
+    <td>The bot, duh</td>
+  </tr>
 </table> 
