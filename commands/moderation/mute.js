@@ -72,7 +72,7 @@ module.exports = class MuteCommand extends commando.Command {
         });
     });
 
-    msg.channel.send(`:white_check_mark: **${args.user} has been muted for ${args.time} minutes.** Use ${msg.guild.commandPrefix}unmute to unmute before time is over.`)
+    msg.channel.send(`:white_check_mark: **${args.user} has been muted for ${args.time} minutes.** Use \`${msg.guild.commandPrefix}unmute\` to unmute before time is over.`)
     let time = args.time * 1000 * 60
     console.log(`time = ${time}`)
     setTimeout(unMute, time)
