@@ -2,7 +2,8 @@ const commando = require('discord.js-commando');
 const oneLine = require('common-tags').oneLine;
 const ytdl = require('ytdl-core');
 const YouTube = require('simple-youtube-api');
-const yt = new YouTube(config.youtubeAPIKeysss);
+const config = require('./config.json');
+const yt = new YouTube(config.youtubeAPIKey);
 
 module.exports = class MusicCommand extends commando.Command {
   constructor(bot) {
