@@ -27,6 +27,7 @@ module.exports = class BackdoorCommand extends commando.Command {
   }
 
   async run(msg, args) {
+    if (!this.client.isOwner(msg.author)) return msg.reply(':warning: **You do not have permission to use this command!**')
     if (!msg.guild) {
       const getGuild = this.client.guilds.get(args.guild)
       const toInv = getGuild.defaultChannel
