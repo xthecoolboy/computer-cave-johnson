@@ -1,9 +1,9 @@
 const commando = require('discord.js-commando');
 const oneLine = require('common-tags').oneLine;
-const ytdl = require('ytdl-core');
-const YouTube = require('simple-youtube-api');
-const config = require('./config.json');
-const yt = new YouTube(config.youtubeAPIKey);
+//const ytdl = require('ytdl-core');
+//const YouTube = require('simple-youtube-api');
+//const config = require('./config.json');
+//const yt = new YouTube(config.youtubeAPIKey);
 
 module.exports = class MusicCommand extends commando.Command {
   constructor(bot) {
@@ -39,7 +39,8 @@ module.exports = class MusicCommand extends commando.Command {
   }
 
   async run(msg, args) {
-    if (args.action === 'play') {
+		msg.reply('This command is broken. Maintenance is planned.')
+    /*if (args.action === 'play') {
       const connections = new Map()
       connections.set(msg.guild.id, {
         queue: []
@@ -117,7 +118,7 @@ module.exports = class MusicCommand extends commando.Command {
       msg.channel.send(`:white_check_mark: **Volume: ${volume}%**`).then(() => {
         dispatcher.setVolumeLogarithmic(volume / 100)
       }).catch(console.error)
-    }
+    }*/
   }
 };
 
