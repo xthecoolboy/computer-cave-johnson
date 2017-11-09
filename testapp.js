@@ -97,7 +97,7 @@ bot
     }
   })
 
-bot.login(config.token).catch(console.error);
+bot.login(process.env.TOKEN).catch(console.error);
 
 process.on('unhandledRejection', err => {
   console.error('Uncaught Promise Error: \n' + err.stack);
