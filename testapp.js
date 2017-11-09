@@ -9,7 +9,6 @@ const bot = new commando.Client({
 const path = require('path');
 const sqlite = require('sqlite')
 const oneLine = require('common-tags').oneLine;
-const config = require('./config.json');
 
 bot.registry
   .registerGroups([
