@@ -21,8 +21,7 @@
     "ytdl-core": "^0.13.3"
   },
   "scripts": {
-    "start": "node --harmony app.js",
-    "silent": "node --harmony testapp.js"
+    "start": "node --harmony app.js"
   },
   "author": "TJDoesCode#6088",
   "license": "ISC"

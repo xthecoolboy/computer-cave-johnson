@@ -30,7 +30,7 @@ bot
   .on('ready', () => {
     console.log(`Client ready; logged in as ${bot.user.tag} (${bot.user.id})`)
     bot.user.setGame('~help | LEMONS!')
-    bot.guilds.map((guild) => guild.defaultChannel.send('It\'s time for SCIENCE, my test subjects!').catch(console.error))
+    //bot.guilds.map((guild) => guild.defaultChannel.send('It\'s time for SCIENCE, my test subjects!').catch(console.error))
   })
   .on('disconnect', () => console.warn('Disconnected!'))
   .on('reconnecting', () => console.warn('Reconnecting...'))
