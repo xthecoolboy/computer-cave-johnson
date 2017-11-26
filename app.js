@@ -83,13 +83,13 @@ bot
   })
   .on('guildCreate', (guild) => {
     console.log(`New guild added: ${guild.name} (${guild.id}), owned by ${guild.owner.user.tag} (${guild.owner.id}).`)
-    guild.defaultChannel.send(`Greetings, friends. I'm Cave Johnson, CEO of Aperture Science - you might know us as a vital participant in the 1968 Senate Hearings on missing astronauts. And you've most likely used one of the many products we invented. But that other people have somehow managed to steal from us. Black Mesa can eat my bankrupt--`)
+    guild.defaultChannel.send('Greetings, friends. I\'m Cave Johnson, CEO of Aperture Science - you might know us as a vital participant in the 1968 Senate Hearings on missing astronauts. And you\'ve most likely used one of the many products we invented. But that other people have somehow managed to steal from us. Black Mesa can eat my bankrupt--')
   })
   .on('message', (msg) => {
     if (msg.author !== bot.user) {
       //console.log(msg.content)
-      if (msg.content.toLowerCase().includes('lemon')) return msg.reply(`I’ve been thinking. When life gives you lemons? Don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons! What am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought is could give me lemons! Do you know who I am? I’m the man who’s going to burn your house down! With the lemons! I’m going to get my engineers to invent a combustible lemon that burns your house down!`)
-      if (msg.content.toLowerCase().includes('danger')) return msg.reply(`Danger? I like the way you think. You're promoted.`)
+      if (msg.content.toLowerCase().includes('lemon')) return msg.reply('I’ve been thinking. When life gives you lemons? Don’t make lemonade. Make life take the lemons back! Get mad! I don’t want your damn lemons! What am I supposed to do with these? Demand to see life’s manager! Make life rue the day it thought is could give me lemons! Do you know who I am? I’m the man who’s going to burn your house down! With the lemons! I’m going to get my engineers to invent a combustible lemon that burns your house down!')
+      if (msg.content.toLowerCase().includes('danger')) return msg.reply('Danger? I like the way you think. You\'re promoted.')
       //if (msg.content.includes('test')) return msg.reply('Hi')
     }
   })
