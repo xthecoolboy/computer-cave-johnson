@@ -1,6 +1,6 @@
 const commando = require('discord.js-commando');
 const bot = new commando.Client({
-  owner: ['197891949913571329', '247318700414205952', '154104023413161984'],
+  owner: ['376384142599782410'],
   commandPrefix: '~'
 });
 //const defbot = new Discord.Client();
